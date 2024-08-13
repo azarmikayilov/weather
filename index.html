@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="weather__header">
+        <div class="weather__search">
+            <input type="text" placeholder="Search for a city..." id="city" class="weather__searchform">
+        </div>
+    </div>
+    <div class="weather__body">
+        <h1 class="weather__city"></h1>
+        <div class="weather__forecast"></div>
+        <div class="weather__icon"></div>
+        <p class="weather__temperature"></p>
+        <div class="weather__minmax">
+            <p>Min: <span id="minTemp">N/A</span>&#176</p>
+            <p>Max: <span id="maxTemp">N/A</span>&#176</p>
+        </div>
+    </div>
+
+    <div class="weather__info">
+        <div class="weather__card">
+            <div>
+                <p>Real Feel</p>
+                <p class="weather__realfeel">N/A</p>
+            </div>
+        </div>
+        <div class="weather__card">
+            <div>
+                <p>Humidity</p>
+                <p class="weather__humidity">N/A</p>
+            </div>
+        </div>
+        <div class="weather__card">
+            <div>
+                <p>Wind</p>
+                <p class="weather__wind">N/A</p>
+            </div>
+        </div>
+        <div class="weather__card">
+            <div>
+                <p>Pressure</p>
+                <p class="weather__pressure">N/A</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
