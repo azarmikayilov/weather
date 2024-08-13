@@ -27,7 +27,9 @@ $(document).ready(function () {
                             const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@4x.png`;
                             $('.weather__icon').html(`<img src="${iconUrl}" alt="Weather icon">`);
 
+                            // Activate the container and search form animation
                             $('.container').addClass('active');
+                            $('.weather__searchform').addClass('active');
                         } else {
                             resetWeatherInfo();
                         }
@@ -52,5 +54,6 @@ $(document).ready(function () {
         $('#minTemp, #maxTemp, .weather__humidity, .weather__wind, .weather__pressure, .weather__forecast').text('N/A');
         $('.weather__icon').html('');
         $('.container').removeClass('active');
+        $('.weather__searchform').removeClass('active'); // Reset search form width
     }
 });

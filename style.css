@@ -30,8 +30,17 @@
 
 .weather__header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.weather__searchform {
+    transition: width 0.5s ease-in-out;
+    width: 300px;
+}
+
+.weather__searchform.active {
+    width: 400px;
 }
 
 input {
