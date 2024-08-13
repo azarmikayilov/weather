@@ -36,7 +36,7 @@
 
 .weather__searchform {
     transition: width 0.5s ease-in-out;
-    width: 300px;
+    width: 200px;
 }
 
 .weather__searchform.active {
@@ -153,10 +153,19 @@ input::placeholder {
     .weather__units {
         margin-top: 1rem;
     }
+
+
+    .weather__searchform.active {
+        width: 300px;
+    }
 }
 
 @media(max-width: 400px){
     .weather__info {
         grid-template-columns: none;
+    }
+
+    .weather__searchform.active {
+        width: 200px;
     }
 }
